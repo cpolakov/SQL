@@ -1,0 +1,21 @@
+CREATE TABLE toy_store (id INTEGER PRIMARY KEY, name text, quantity integer, price integer, sales integer);
+INSERT INTO toy_store VALUES
+(1,"stuffed animals",100,20,1027),
+(2,"squishmallows",53,30,2065),
+(3,"licoln logs",44,45,5012),
+(4,"basketballs",32,30,3210),
+(5,"trading cards",53,15,10002),
+(6,"video games",120,60,1234),
+(7,"bikes",24,95, 145),
+(8,"dolls",15,30,421),
+(9,"puzzles",40,30,1222),
+(10,"board games",43,35, 3000),
+(11, "costumes",13, 55,122),
+(12,"arts & crafts kits",30, 30, 2000),
+(13, "scooters",50, 65, 5002),
+(14, "frisbees",10,5, 302),
+(15, "outdoor playset",2,200,20);
+
+SELECT id,name,price,quantity
+from toy_store
+order by price asc
